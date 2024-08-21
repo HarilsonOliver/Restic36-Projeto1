@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -6,29 +7,32 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<div class="head">
-    <div class="headerobjectswrapper">
-        <header>World Economic Journal</header>
+    <div class="head">
+        <div class="headerobjectswrapper">
+            <header>World Economic Journal</header>
+        </div>
+        <div class="subhead">Newspaper Company - Todo o dia, todos os dias.</div>
     </div>
-    <div class="subhead">Newspaper Company - Todo o dia, todos os dias.</div>
-</div>
 
-<div class="main-content">
+    <div class="main-content">
 
-    <div class="image-container">
-        <img src="./img/NewCoo1.png" alt="Logo Pequeno">
+        <div class="image-container">
+            <img src="./img/NewCoo1.png" alt="Logo Pequeno">
+        </div>
+        
+        <form id="name-form" action="bem-vindo.html" method="GET">
+            <label for="name">Informe seu nome:</label>
+            <input type="text" id="name" name="name" placeholder="Nome Aqui" required>
+            <button type="submit">Entrar</button>
+        </form>        
     </div>
+
     
-    <form id="name-form" action="bem-vindo.html" method="GET">
-        <label for="name">Informe seu nome:</label>
-        <input type="text" id="name" name="name" placeholder="Nome Aqui" required>
-        <button type="submit">Entrar</button>
-    </form>
-</div>
+    <footer>
+        <p>© 2024 Restic36 Project by Big News Harilson</p>
+    </footer>
 
-<footer>
-    <p>© 2024 Restic36 Project by Big News Harilson</p>
-</footer>
-<script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
+    
 </body>
 </html>

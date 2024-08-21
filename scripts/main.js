@@ -13,10 +13,8 @@ function toggleSidebar() {
 document.getElementById('newsletter-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const email = document.getElementById('email').value;
-    document.getElementById('form-response').innerText = `Obrigado por se inscrever, ${email}!`;
+    document.getElementById('form-response').innerText = `Obrigado por se inscrever!`;
 });
-
-
 
 document.querySelectorAll('.collumn').forEach(collumn => {
     collumn.addEventListener('mouseover', () => {
@@ -32,3 +30,4 @@ document.addEventListener("DOMContentLoaded", function() {
     const name = urlParams.get('name');
     document.getElementById('user-name').innerText = name ? name : 'Leitor';
 });
+

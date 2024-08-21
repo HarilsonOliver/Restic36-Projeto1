@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -6,43 +7,42 @@
     <meta name="viewport" content="width=device-width">
 </head>
 <body>
-<div class="head">
-    <div class="headerobjectswrapper">
-        <header>World Economic Journal</header>
+    <div class="head">
+        <div class="headerobjectswrapper">
+            <header>World Economic Journal</header>
+        </div>
+        <div class="subhead">Explore as edições do World Economic Journal</div>
     </div>
-    <div class="subhead">Explore as edições do World Economic Journal</div>
-</div>
 
-<!-- Botão de menu para abrir a barra lateral -->
-<div id="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+    <!-- Botão de menu para abrir a barra lateral -->
+    <div id="menu-button" onclick="toggleSidebar()">☰ Menu</div>
 
-<!-- Barra lateral -->
-<div id="sidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
-    <a href="bem-vindo.html">Pagina Principal</a>
-    <a href="edicao1.html">#1 Edição</a>
-    <a href="edicao2.html">#2 Edição</a>
-    <a href="edicaoFuturo.html">Edição Futuro</a>
-    <a href="index.html">Sair</a>
-</div>
+    <!-- Barra lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+        <a href="bem-vindo.html">Pagina Principal</a>
+        <a href="edicao1.html">#1 Edição</a>
+        <a href="edicao2.html">#2 Edição</a>
+        <a href="edicaoFuturo.html">Edição Futuro</a>
+        <a href="index.html">Sair</a>
+    </div>
 
-<div class="bemvindo-container">
-    <p>Bem-vinde,<span id="user-name"></span>!</p>
-    <p>Obrigado por acessar o World Economic Journal. Escolha uma edição no menu para começar a leitura.</p>
-</div>
+    <div class="bemvindo-container">
+        <p>Bem-vinde, <span id="user-name"></span>!</p>
+        <p>Obrigado por acessar o World Economic Journal. Escolha uma edição no menu para começar a leitura.</p>
+    </div>
 
-<form id="newsletter-form">
-    <label for="email">Inscreva-se para receber atualizações:</label>
-    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-    <button type="submit">Inscrever-se</button>
-</form>
-<div id="form-response"></div>
+    <footer>
+        <form id="newsletter-form">
+            <label for="email">Inscreva-se para receber atualizações:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            <button type="submit">Inscrever-se</button>
+        </form>
+        <div id="form-response"></div>
+        <p id="footer-text">© 2024 Restic36 Project by Big News Harilson</p>
+    </footer>
 
-<footer>
-    <p>© 2024 Restic36 Project by Big News Harilson</p>
-</footer>
-
-<script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
 
 </body>
 </html>

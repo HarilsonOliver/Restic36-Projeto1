@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Newspaper Style Design Experiment</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+        <div class="weatherforcastbox"><span style="font-style: italic;">#N° Edição</span><br><span>Text</span></div>
+        <header>World Economic Journal</header>
+    </div>
+
+    <div class="subhead">Newspaper Company - Todo o dia, todos os dias. - Four Pages</div>
+</div>
+<!-- Botão de menu para abrir a barra lateral -->
+<div id="menu-button" onclick="toggleSidebar()">☰ Menu</div>
+
+<!-- Barra lateral -->
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+    <a href="bem-vindo.html">Pagina Principal</a>
+    <a href="edicao1.html">#1 Edição</a>
+    <a href="edicaoFuturo.html">Edição Futuro</a>
+    <a href="index.html">Sair</a>
+    <!-- Adicionar mais links para outras edições conforme necessário -->
+</div>
+<div id="main-content">
+    <div class="collumns">
+        <div class="collumn">
+            <img class="media" src="./img/" alt="">
+            <div class="head"><span class="headline hl3">HeadLine</span><p><span class="headline hl4">por AUTOR</span></p></div>
+            Text</p></div>
+            
+        <div class="collumn">
+            <div class="head"><span class="headline hl5">HeadLine</span><p><span class="headline hl6">LittleLine</span></p></div>
+            text
+            <figure class="figure">
+								<img class="media" src="./img" alt="">
+								<figcaption class="figcaption">Comment</figcaption>
+						</figure>
+
+            <p>text</p>
+
+            <p>text.</p>
+
+            </div>
+        <div class="collumn"><div class="head"><span class="headline hl1">HeadLine</span><p><span class="headline hl2">LittleLine</span></p>
+        </div>text</p>
+	    <figure class="figure">
+				<img class="media" src="./img" alt="">
+				<figcaption class="figcaption">"Comment"</figcaption>
+		</figure>
+        <p>Text <span class="citation">"IMPACT phrase"</span> text</p>
+        <p>text</p>
+        </div>
+        <div class="collumn"><div class="head"><span class="headline hl3">HeadLine</span><p><span class="headline hl4">LittleLine</span></p></div><p>text</p></div>
+        <div class="collumn"><div class="head"><span class="headline hl1">HeadLine </span><p><span class="headline hl4">por Autor</span></p></div><p>text </p>
+					
+					<p>text </p></div>
+    </div>
+</div>
+
+<footer>
+    <form id="newsletter-form">
+        <label for="email">Inscreva-se para receber atualizações:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <button type="submit">Inscrever-se</button>
+    </form>
+    <div id="form-response"></div>
+    <p id="footer-text">© 2024 Restic36 Project by Big News Harilson</p>
+</footer>
+
+
+<script src="./scripts/main.js"></script>
+
+</body>
+</html>

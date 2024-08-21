@@ -15,12 +15,11 @@ header{
 
 }
 
-
 .image-container {
     position: relative;
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-top: 130px;
 }
 
 .image-container img {
@@ -54,7 +53,7 @@ form#name-form label {
 
 form#name-form input[type="text"] {
     position: relative;
-    width: 50%;
+    width: 30%;
     border: 3px double #2f2f2f;
     padding: 15px 20px;
     line-height: 30px;
@@ -373,23 +372,30 @@ p{
     width: 100%;
 }
 
-#newsletter-form{
-
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-}
-
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: transparent;
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     bottom: 0;
-    left: 0;
     width: 100%;
+    background-color: #f9f7f1; 
+    padding: 10px;
+    margin-top: 15%;
 }
+
+#newsletter-form {
+    margin-right: 0; 
+}
+
+#footer-text {
+    flex-grow: 1; 
+    text-align: center;
+    padding-right: 25%;
+
+}
+
+
 /*________________________________________________________________________________________________________________________________*/
 /*MEDIAQUERIES*/
 @media only all and (max-width: 1300px) {
@@ -415,7 +421,7 @@ footer {
         width: 100%;
     }
 	.collumn + .collumn {
-				border-left: none;
+		border-left: none;
       	border-bottom: 1px solid #2f2f2f;
 	}
     header{
