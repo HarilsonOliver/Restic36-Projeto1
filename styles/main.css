@@ -372,6 +372,31 @@ p{
     width: 100%;
 }
 
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre as colunas */
+    margin: 20px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+
 footer {
     display: flex;
     justify-content: center;
