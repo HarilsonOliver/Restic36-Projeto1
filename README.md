@@ -20,9 +20,9 @@ Este projeto simula edições de um jornal digital chamado *World Economic Journ
 - **CSS3**: Estilização e layout da página.
 - **JavaScript**: Interatividade, manipulação do DOM, e animações.
 - **Google Fonts**: Fontes personalizadas para uma melhor experiência visual.
+- **Integração com API externa**: Utilizado a API do MediaStack para visualizar noticias do mundo real.
 
 ## Possíveis Melhorias Futuras
-- **Integração com APIs externas**: Implementar uma API para fornecer notícias reais ou dados econômicos.
 - **Aprimoramento da navegação**: Adicionar suporte para edições em múltiplos idiomas e navegação mais fluida.
 - **Sistema de comentários**: Permitir que os usuários comentem nos artigos e interajam entre si.
 - **Versão responsiva aprimorada**: Melhorar a experiência em dispositivos móveis com layouts mais adaptáveis.
