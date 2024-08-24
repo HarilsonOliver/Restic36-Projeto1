@@ -1,33 +1,42 @@
+// Função para alternar a barra lateral
 function toggleSidebar() {
     var sidebar = document.getElementById("sidebar");
     var content = document.getElementById("main-content");
-    if (sidebar.style.width === "250px") {
-        sidebar.style.width = "0";
-        content.style.marginRight= "0";
-    } else {
-        sidebar.style.width = "250px";
-        content.style.marginRight = "250px";
+    if (sidebar && content) {
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            content.style.marginRight = "0";
+        }
+        else {
+            sidebar.style.width = "250px";
+            content.style.marginRight = "250px";
+        }
     }
 }
-
-document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+// Adiciona um event listener para o formulário de newsletter
+var newsletterForm = document.getElementById('newsletter-form');
+newsletterForm === null || newsletterForm === void 0 ? void 0 : newsletterForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    const email = document.getElementById('email').value;
-    document.getElementById('form-response').innerText = `Obrigado por se inscrever!`;
+    var form = e.target;
+    var email = form.elements.namedItem('email');
+    if (email) {
+        document.getElementById('form-response').innerText = "Obrigado por se inscrever!";
+    }
 });
-
-document.querySelectorAll('.collumn').forEach(collumn => {
-    collumn.addEventListener('mouseover', () => {
-        collumn.style.backgroundColor = '#f0f0f0';
+// Adiciona eventos de mouseover e mouseout para cada coluna
+document.querySelectorAll('.collumn').forEach(function (collumn) {
+    var columnElement = collumn;
+    columnElement.addEventListener('mouseover', function () {
+        columnElement.style.backgroundColor = '#f0f0f0';
     });
-    collumn.addEventListener('mouseout', () => {
-        collumn.style.backgroundColor = 'transparent';
+    columnElement.addEventListener('mouseout', function () {
+        columnElement.style.backgroundColor = 'transparent';
     });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get('name');
-    document.getElementById('user-name').innerText = name ? name : 'Leitor';
+// Executa código após o carregamento do DOM
+document.addEventListener("DOMContentLoaded", function () {
+    var urlParams = new URLSearchParams(window.location.search);
+    var name = urlParams.get('name');
+    var userNameElement = document.getElementById('user-name');
+    userNameElement.innerText = name ? name : 'Leitor';
 });
-
