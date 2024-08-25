@@ -10,7 +10,7 @@ Este projeto simula edições de um jornal digital chamado *World Economic Journ
    ```
 2. **Navegue até o diretório do projeto**:
    ```bash
-   cd seu-repositorio
+   cd repositorio
    ```
 3. **Abra o arquivo `index.html` em seu navegador**:
    - Você pode simplesmente clicar duas vezes no arquivo `index.html` ou arrastá-lo para o navegador.
